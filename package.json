@@ -1,0 +1,25 @@
+{
+  "name": "react-node-example",
+  "version": "1.0.0",
+  "description": "A simple node server hosting a react app that communicates via get / post and fetch()?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiveBacteria/react-node-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LiveBacteria/react-node-example/issues"
+  },
+  "homepage": "https://github.com/LiveBacteria/react-node-example#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "react": "^16.10.0",
+    "react-dom": "^16.10.0"
+  }
+}
