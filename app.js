@@ -3,6 +3,7 @@ const app = express();
 const port = 3000;
 const router = express.Router();
 const bodyParser = require('body-parser');
+const dotEnv = require("dotEnv");
 
 const request = require("request");
 const apiKey = "bf78abe9c9168e7c660219b8083bdbe4";
