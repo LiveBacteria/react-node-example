@@ -4,7 +4,8 @@
   "description": "A simple node server hosting a react app that communicates via get / post and fetch()?",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "set NODE_ENV=test&& jasmine",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -18,8 +19,13 @@
   },
   "homepage": "https://github.com/LiveBacteria/react-node-example#readme",
   "dependencies": {
+    "ejs": "^2.7.1",
     "express": "^4.17.1",
     "react": "^16.10.0",
     "react-dom": "^16.10.0"
+  },
+  "devDependencies": {
+    "jasmine": "^3.5.0",
+    "request": "^2.88.0"
   }
 }
