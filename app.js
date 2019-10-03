@@ -4,9 +4,11 @@ const port = 3000;
 const router = express.Router();
 const bodyParser = require('body-parser');
 const dotEnv = require("dotEnv");
+require('dotenv').config();
 
 const request = require("request");
-const apiKey = "bf78abe9c9168e7c660219b8083bdbe4";
+
+console.log(apiKey);
 
 const path = require("path");
 const viewsFolder = path.join(__dirname, "src", "views");
@@ -26,7 +28,9 @@ app.get('/public/css/style.css', (req, res) => {
    res.sendFile(path.join(__dirname, "/public/css/", "style.css"));
 });
 
-app.listen(port, () => {
+app.set('port', (process.env.PORT || 3000));
+
+app.listen( app.get('port'), () => {
     console.log(`Example app listening on port ${port}!`);
 });
 
