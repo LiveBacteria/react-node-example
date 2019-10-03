@@ -3,10 +3,12 @@ const app = express();
 const port = 3000;
 const router = express.Router();
 const bodyParser = require('body-parser');
-const dotEnv = require("dotEnv");
+//const dotEnv = require("dotEnv");
 require('dotenv').config();
 
 const request = require("request");
+
+const apiKey = process.env.weatherApiKey;
 
 console.log(apiKey);
 

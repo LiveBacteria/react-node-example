@@ -2,7 +2,7 @@ const request = require("request");
 const server = require("../../app");
 const base = "http://localhost:3000/";
 
-describe("routes : home", () => {
+describe("routes : getWeather", () => {
 
   describe("POST /getWeather", () => {
     const options = {
