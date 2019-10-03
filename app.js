@@ -10,7 +10,7 @@ if(process.env.NODE_ENV !== 'production'){
 
 const request = require("request");
 
-const apiKey = process.env.weatherApiKey;
+//const apiKey = process.env.weatherApiKey;
 
 console.log(apiKey);
 
