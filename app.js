@@ -4,7 +4,9 @@ const port = 3000;
 const router = express.Router();
 const bodyParser = require('body-parser');
 //const dotEnv = require("dotEnv");
-require('dotenv').config();
+if(process.env.NODE_ENV !== 'production'){
+    require('dotenv').config();
+}
 
 const request = require("request");
 
